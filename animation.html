@@ -1,0 +1,62 @@
+<html>
+<head><title>Animation</title></head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<body>
+
+<div id="navbar">
+<script>
+function hideMenu() {
+document.getElementById('navbar').className = "menuclosed";
+document.getElementById('navbar').onclick = showMenu;
+}
+function showMenu() {
+document.getElementById('navbar').className = "menuopen";
+document.getElementById('navbar').onclick = hideMenu;
+}
+function init() {
+document.getElementById('navbar').onclick = showMenu;
+}
+window.onload = init;
+</script>
+
+
+<ul>
+  <li><a href="">Menu</a></li>
+  <li><a href="animation.html">Animation</a></li>
+  <li><a href="index.html">News</a></li>
+  <li><a href="users.html">Users</a></li>
+</ul>
+</div>
+
+<div id="content">
+
+<div id="sign">
+Hello
+</div>
+
+
+<div class="toaster animate position"></div>
+
+
+<div id="page3header">
+Animation Tests
+</div>
+
+
+<div id="cloudcontainer">
+	<img src="background.jpg" width="900" height="250">
+	<div id="cloud1">
+		<img src="cloud1.jpg" width="150" height="70">
+	</div>
+
+	<div id="cloud2">
+		<img src="cloud2.jpg" width="130" height="90">
+	</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
